@@ -1,0 +1,115 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  background-color: #eae7e2;
+  height: 100vh;
+  font-family: 'Poppins';
+}
+
+.app {
+  width: 60%;
+}
+
+.app h1 {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 0.5em 0.5em 0 0;
+  background-color: #b9cbd9;
+}
+
+.app form {
+  display: flex;
+  width: 100%;
+  background-color: #b9cbd9;
+}
+
+.app form input {
+  border: none;
+  background-color: #d7e2e8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  width: 90%;
+}
+
+::placeholder {
+  color: white;
+}
+
+.app form button {
+  border: none;
+  color: white;
+  background-color: #cfe3e2;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  height: 50px;
+  width: 10%;
+}
+
+.app ul {
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  color: #e0e0e0;
+  padding: 0;
+}
+
+.app ul li {
+  padding: 10px;
+  background-color: #fcc9c5;
+  border-bottom: 1px solid #feddd8;
+}
+
+.check {
+  width: 0.8em;
+  height: 0.8em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid rgb(255,255,255);
+  -webkit-appearance: none;
+}
+
+.check:checked {
+  background-color: #feddd8;
+}
+
+.placeholder {
+  color: white;
+}
+
+.task {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.task:focus {
+  outline: none;
+}
+
+.app ul li i {
+  float: right;
+  cursor: pointer;
+  color: #b9cbd9;
+}
+
+.app ul li i:hover {
+  color: #feddd8;
+}
+
+.complete {
+  color: rgba(192,192,192,0.8);
+  text-decoration: line-through;
+}
+
+@media (max-width:768px) {
+  .app {
+    width: 90%;
+  }
+}
